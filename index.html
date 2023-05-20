@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" Samesite="Strict">
     <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <form>
+        <h1>EMI CALCULATOR</h1>
+        <div class="container_input">
+            <label for="loan">Loan Amount:</label>
+            <input type="number" name="loan" id="loan" required title="Enter the loan amount">
+            <label for="interest">Interest Rate:</label>
+            <input type="number" name="interest" id="interest" required title="Enter Interest rate">
+            <label for="tenure">Tenure Months:</label>
+            <input type="number" name="tenure" id="tenure" required title="Enter tenure in months">
+        </div>
+        <input type="submit" value="Calculate" id="calculate"><br>
+        <div class="result">
+        <label for="result">EMI:</label>
+        <input type="text" id="result" readonly>
+    </div>
+
+    </form>
+
+
+    <script src="main.js"></script>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/lalit.rajbanshi.3158"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/lalitrajbanshi_"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/lalit-rajbanshi-490837265/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.github.com/Zack1o1"><i class="fab fa-github"></i></a>
+            <p>&copy; Lalit Rajbanshi <span id="current-year">2023</span></p>
+        </div>
+    </footer>
 </body>
+
 </html>
